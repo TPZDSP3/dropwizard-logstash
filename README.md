@@ -1,7 +1,8 @@
 # dropwizard-logstash
 
 Dropwizard extension that supports logstash format with various appenders: `logstash-file`, `logstash-syslog`, `logstash-console`
-
+## Build jar with dependencies
+`docker run --rm --volume "$PWD":/usr/src/dropwizard-logstash --workdir /usr/src/dropwizard-logstash openjdk:8 bash -c "./gradlew fatJar"`
 ## Using the library
 
 * Build and install to your local repository: `./gradlew publishToMavenLocal`
